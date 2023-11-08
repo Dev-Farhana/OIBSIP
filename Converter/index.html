@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="converter">
+        <h1 style="color: royalblue;">Temperature Converter</h1>
+        <label for="degrees">Enter degrees:</label>
+        <input type="number" id="degrees" step="0.0001">
+        <br>
+        <label for="scale">Select scale:</label>
+        <select id="scale">
+            <option value="c">Celsius (°C)</option>
+            <option value="f">Fahrenheit (°F)</option>
+        </select>
+        <br>
+        <button> Convert </button>
+        <p class="result"></p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>

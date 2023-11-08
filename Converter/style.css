@@ -1,0 +1,48 @@
+  @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Lobster&family=Pacifico&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Pacifico', cursive;
+    background-color: rgb(194, 205, 238);
+    font-size: x-large;
+}
+.converter {
+    margin: 6rem auto;
+    width: 50%;
+    border: 1px solid #ccc;
+    padding: 40px;
+    text-align: center;
+    background-color: #e5dede;
+    border-radius: 6px;
+    color: rosybrown;
+}
+input, #scale {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 3px  6px;
+    border: #e5dede;
+    outline: none;
+}
+button {
+    background: linear-gradient(130deg , royalblue , rgba(171, 171, 55, 0.965));
+    color: white;
+    padding: 14px 20px;
+    border-radius: 10px;
+    margin: 18px 0;
+    border: none;
+    cursor: pointer;
+    font-family: 'Cabin Sketch', sans-serif;
+    font-weight: bold;
+    font-size: larger;
+}
+button:hover{
+    background: linear-gradient(130deg , rgb(152, 167, 213) , rgba(171, 171, 55, 0.965));
+}
+.result {
+    font-size: 24px;
+    color: rosybrown;
+}
