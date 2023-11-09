@@ -1,16 +1,18 @@
-body {
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Lobster&family=Pacifico&display=swap');
+
+  body {
     margin: 0;
     padding: 0;
+    font-family: 'Lobster', sans-serif;
 }
 
 header {
-    background-color: #333;
     color: #ccc;
     padding: 10px 36px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: 'Cabin Sketch', sans-serif;
 }
 
 nav li {
@@ -21,32 +23,6 @@ nav a {
     text-decoration: none;
     color: #ccc;
     font-weight: bold;
-}
-
-.bgimage{
-    background: url("./Images/animegirl-neon-face-mask.jpg")  ;
-    height:100vh;
-    background-size:cover;
-    position:relative;
-    padding: 0;
-    margin: 0;
-}
-/* text css above hero image*/
-.hero_title {
-    padding-top: 10rem;
-    font-size: 4.5rem;
-}
-.hero_desc {
-    font-size: 2rem;
-}
-.hero_text {
-    text-align: left;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    margin-left: 4rem;
 }
 
 .section {
@@ -70,14 +46,55 @@ nav a {
 .card-title {
     text-align: center;
 }
+.card .servicesIcon {
+    color: #4d4ae8; 
+}
+
 .card:hover .servicesIcon {
-    color: #008000;
+    color: #333;
 }
 .servicesText:hover {
-    border: 1px solid #008000;
+    border: 1px solid  #4d4ae8; ;
 }
 
 .image_about {
     width: 100%;
 }
 
+#text{
+    backdrop-filter: blur(11px) saturate(180%); 
+    -webkit-backdrop-filter: blur(11px) saturate(180%); 
+    background-color: rgba(255,255,255, 0.75); 
+    border-radius:  12px; 
+    border: 1px solid rgba(209, 213, 219, 0.18); 
+    margin-top: 8rem;
+    width: 33%;
+    color: #4d4ae8; 
+}
+.bgimage {
+    height:100vh;
+    background: url('./Images/animegirl-neon-face-mask.jpg') no-repeat;
+    background-size:contain;
+    position:relative;
+    left: 4rem;
+    margin: 6rem;
+    border-radius: 16px;
+}
+h1{
+    font-family: 'Cabin Sketch', sans-serif;
+    color: #4d4ae8;
+    font-weight: bold;
+}
+
+@media (min-width: 260px ) and (max-width: 840px ) {
+    #text{
+        width: 49%;
+        margin: -2rem 0 !important; 
+    }
+        
+    .bgimage {
+        left: 0;
+        margin: 2rem;
+        overflow: hidden;
+    }
+}
